@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>基本动画——隐藏</title>
+	<style type="text/css">
+		#container div {
+			width: 200px;
+			height: 50px;
+			margin-bottom: 2px;
+		}
+		#container div:first-of-type {
+			background : red;
+		}
+		#container div:nth-of-type(2) {
+			background : blue;
+		}
+		#container div:nth-of-type(3) {
+			position: relative;
+			left:100px;
+			background : green;
+		}
+	</style>
+	<script src="../lib/jquery-3.1.1.js"></script>
+</head>
+<body>
+
+	<div id="container">
+		<div></div>
+		<div></div>
+		<div></div>
+	</div>
+	<div>
+		<button>隐藏</button>
+		<button>显示</button>
+		<button>再说</button>
+	</div>
+	<script>
+		$(document).ready(function(){
+			/*//1.
+			function handlerHideDiv(e){
+				$("#container div").hide(4000,'linear', function(){
+					console.log("隐藏动画已经执行完毕！");
+				});
+			}
+			//2.
+			$("button:first").on('click', handlerHideDiv);
+
+			//////////////////////////////////////////////////////
+			function handlerShowDiv(e){
+				$("#container div").show(4000,'linear',function(){
+					console.log("显示动画已经执行完毕！");
+				});
+			}
+
+			$("button:eq(1)").on('click', handlerShowDiv);
+			*/
+			
+			/*function hideDiv(){
+				$("#container div").hide(1000,'linear',showDiv);
+			}
+			function showDiv(){
+				$("#container div").show(1000,'linear',hideDiv);
+			}
+
+			$("button:last").on('click',hideDiv);*/
+
+			/*function handlerToggleDiv(e){
+				$("#container div").toggle(1000,'linear',   );
+			}
+
+			$("button:last").on('click',handlerToggleDiv);*/
+			//$("#container div").first().css("display","none");
+			/*$("button:eq(1)").on('click',function(){
+				$("#container div").first().fadeOut(4000);
+				//$("#container div").first().slideDown(4000);
+			})*/
+			var cssPropties = {
+				width:'200px',
+				left:0
+			}
+
+			$("button:eq(2)").on('click',function(){
+				$("#container div:last").animate(cssPropties, 3000);
+			})
+		})
+	</script>
+</body>
+</html>
