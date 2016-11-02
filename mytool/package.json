@@ -1,0 +1,18 @@
+{
+	"author" : "zjfeng" ,
+	"name" : "able7996" ,
+	"version" : "0.0.1" ,
+	"description" : "打印" ,
+	"main" : "mytool" ,
+	"repository" : {
+		"type" : "git" ,
+		"url" : "https://github.com/zjfeng7995/m1614/tree/master/mytool"
+	} ,
+	"keywords" : [
+		"censor" , "print"
+	] ,
+	"dependencies" : {} ,
+	"engines" : {
+		"node" : "*"
+	}
+}
