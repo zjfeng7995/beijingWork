@@ -1,106 +1,39 @@
 0 info it worked if it ends with ok
 1 verbose cli [ 'E:\\程序安装\\npmjs\\node.exe',
 1 verbose cli   'E:\\程序安装\\npmjs\\node_modules\\npm\\bin\\npm-cli.js',
-1 verbose cli   'publish' ]
+1 verbose cli   'adduser' ]
 2 info using npm@3.10.8
 3 info using node@v7.0.0
-4 verbose publish [ '.' ]
-5 silly cache add args [ '.', null ]
-6 verbose cache add spec .
-7 silly cache add parsed spec Result {
-7 silly cache add   raw: '.',
-7 silly cache add   scope: null,
-7 silly cache add   escapedName: null,
-7 silly cache add   name: null,
-7 silly cache add   rawSpec: '.',
-7 silly cache add   spec: 'E:\\my1614\\workspace\\yztc_html5_repositorys\\nodejs',
-7 silly cache add   type: 'directory' }
-8 verbose addLocalDirectory C:\Users\Administrator\AppData\Roaming\npm-cache\able\0.1.1\package.tgz not in flight; packing
-9 verbose correctMkdir C:\Users\Administrator\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
-10 info lifecycle able@0.1.1~prepublish: able@0.1.1
-11 silly lifecycle able@0.1.1~prepublish: no script for prepublish, continuing
-12 verbose tar pack [ 'C:\\Users\\Administrator\\AppData\\Roaming\\npm-cache\\able\\0.1.1\\package.tgz',
-12 verbose tar pack   'E:\\my1614\\workspace\\yztc_html5_repositorys\\nodejs' ]
-13 verbose tarball C:\Users\Administrator\AppData\Roaming\npm-cache\able\0.1.1\package.tgz
-14 verbose folder E:\my1614\workspace\yztc_html5_repositorys\nodejs
-15 verbose addLocalTarball adding from inside cache C:\Users\Administrator\AppData\Roaming\npm-cache\able\0.1.1\package.tgz
-16 verbose correctMkdir C:\Users\Administrator\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
-17 silly cache afterAdd able@0.1.1
-18 verbose afterAdd C:\Users\Administrator\AppData\Roaming\npm-cache\able\0.1.1\package\package.json not in flight; writing
-19 verbose correctMkdir C:\Users\Administrator\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
-20 verbose afterAdd C:\Users\Administrator\AppData\Roaming\npm-cache\able\0.1.1\package\package.json written
-21 silly publish { author: { name: 'zjfeng' },
-21 silly publish   name: 'able',
-21 silly publish   version: '0.1.1',
-21 silly publish   description: '审核敏感词',
-21 silly publish   main: 'able',
-21 silly publish   repository:
-21 silly publish    { type: 'git',
-21 silly publish      url: 'https://github.com/zjfeng7995/m1614/tree/master/nodejs' },
-21 silly publish   keywords: [ 'censor', 'print' ],
-21 silly publish   dependencies: {},
-21 silly publish   engines: { node: '*' },
-21 silly publish   readme: 'ERROR: No README data found!',
-21 silly publish   _id: 'able@0.1.1',
-21 silly publish   scripts: {},
-21 silly publish   _shasum: '4ea6f042b3950445d353a092e348a84fe035a4b4',
-21 silly publish   _from: '.' }
-22 verbose getPublishConfig undefined
-23 silly mapToRegistry name able
-24 silly mapToRegistry using default registry
-25 silly mapToRegistry registry https://registry.npmjs.org/
-26 silly mapToRegistry data Result {
-26 silly mapToRegistry   raw: 'able',
-26 silly mapToRegistry   scope: null,
-26 silly mapToRegistry   escapedName: 'able',
-26 silly mapToRegistry   name: 'able',
-26 silly mapToRegistry   rawSpec: '',
-26 silly mapToRegistry   spec: 'latest',
-26 silly mapToRegistry   type: 'tag' }
-27 silly mapToRegistry uri https://registry.npmjs.org/able
-28 verbose publish registryBase https://registry.npmjs.org/
-29 silly publish uploading C:\Users\Administrator\AppData\Roaming\npm-cache\able\0.1.1\package.tgz
-30 verbose request uri https://registry.npmjs.org/able
-31 verbose request sending authorization for write operation
-32 info attempt registry request try #1 at 10:28:24
-33 verbose request using bearer token for auth
-34 verbose request id 761f120c6feec371
-35 http request PUT https://registry.npmjs.org/able
-36 http 403 https://registry.npmjs.org/able
-37 verbose headers { 'content-type': 'application/json',
-37 verbose headers   'cache-control': 'max-age=300',
-37 verbose headers   'content-length': '98',
-37 verbose headers   'accept-ranges': 'bytes',
-37 verbose headers   date: 'Wed, 02 Nov 2016 02:28:27 GMT',
-37 verbose headers   via: '1.1 varnish',
-37 verbose headers   connection: 'keep-alive',
-37 verbose headers   'x-served-by': 'cache-lcy1142-LCY',
-37 verbose headers   'x-cache': 'MISS',
-37 verbose headers   'x-cache-hits': '0',
-37 verbose headers   'x-timer': 'S1478053707.407344,VS0,VE587',
-37 verbose headers   vary: 'Accept-Encoding' }
-38 verbose request invalidating C:\Users\Administrator\AppData\Roaming\npm-cache\registry.npmjs.org\able on PUT
-39 error publish Failed PUT 403
-40 verbose stack Error: you do not have permission to publish "able". Are you logged in as the correct user? : able
-40 verbose stack     at makeError (E:\程序安装\npmjs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:302:12)
-40 verbose stack     at CachingRegistryClient.<anonymous> (E:\程序安装\npmjs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:290:14)
-40 verbose stack     at Request._callback (E:\程序安装\npmjs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:210:14)
-40 verbose stack     at Request.self.callback (E:\程序安装\npmjs\node_modules\npm\node_modules\request\request.js:187:22)
-40 verbose stack     at emitTwo (events.js:106:13)
-40 verbose stack     at Request.emit (events.js:191:7)
-40 verbose stack     at Request.<anonymous> (E:\程序安装\npmjs\node_modules\npm\node_modules\request\request.js:1044:10)
-40 verbose stack     at emitOne (events.js:96:13)
-40 verbose stack     at Request.emit (events.js:188:7)
-40 verbose stack     at IncomingMessage.<anonymous> (E:\程序安装\npmjs\node_modules\npm\node_modules\request\request.js:965:12)
-41 verbose statusCode 403
-42 verbose pkgid able
-43 verbose cwd E:\my1614\workspace\yztc_html5_repositorys\nodejs
-44 error Windows_NT 6.1.7601
-45 error argv "E:\\程序安装\\npmjs\\node.exe" "E:\\程序安装\\npmjs\\node_modules\\npm\\bin\\npm-cli.js" "publish"
-46 error node v7.0.0
-47 error npm  v3.10.8
-48 error code E403
-49 error you do not have permission to publish "able". Are you logged in as the correct user? : able
-50 error If you need help, you may report this error at:
-50 error     <https://github.com/npm/npm/issues>
-51 verbose exit [ 1, true ]
+4 verbose adduser before first PUT { _id: 'org.couchdb.user:zjfeng',
+4 verbose adduser   name: 'zjfeng',
+4 verbose adduser   password: 'XXXXX',
+4 verbose adduser   email: 'zjfeng16@163.com',
+4 verbose adduser   type: 'user',
+4 verbose adduser   roles: [],
+4 verbose adduser   date: '2016-11-02T02:33:34.107Z' }
+5 verbose request uri https://registry.npmjs.org/-/user/org.couchdb.user:zjfeng
+6 verbose request new user, so can't send auth
+7 info attempt registry request try #1 at 10:33:34
+8 verbose request id 96fe3841e6c02ee8
+9 http request PUT https://registry.npmjs.org/-/user/org.couchdb.user:zjfeng
+10 verbose stack Error: kill ENOSYS
+10 verbose stack     at exports._errnoException (util.js:1026:11)
+10 verbose stack     at process.kill (internal/process.js:173:13)
+10 verbose stack     at process.listener (E:\程序安装\npmjs\node_modules\npm\node_modules\npmlog\node_modules\gauge\node_modules\signal-exit\index.js:86:15)
+10 verbose stack     at emitNone (events.js:91:20)
+10 verbose stack     at process.emit (events.js:185:7)
+10 verbose stack     at processEmit (E:\程序安装\npmjs\node_modules\npm\node_modules\npmlog\node_modules\gauge\node_modules\signal-exit\index.js:146:32)
+10 verbose stack     at processEmit (E:\程序安装\npmjs\node_modules\npm\node_modules\npm-registry-client\node_modules\npmlog\node_modules\gauge\node_modules\signal-exit\index.js:146:32)
+10 verbose stack     at Signal.wrap.onsignal (internal/process.js:200:44)
+11 verbose cwd E:\my1614\workspace\yztc_html5_repositorys\nodejs
+12 error Windows_NT 6.1.7601
+13 error argv "E:\\程序安装\\npmjs\\node.exe" "E:\\程序安装\\npmjs\\node_modules\\npm\\bin\\npm-cli.js" "adduser"
+14 error node v7.0.0
+15 error npm  v3.10.8
+16 error code ENOSYS
+17 error errno ENOSYS
+18 error syscall kill
+19 error kill ENOSYS
+20 error If you need help, you may report this error at:
+20 error     <https://github.com/npm/npm/issues>
+21 verbose exit [ 1, true ]
